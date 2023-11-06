@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-import-export-web",
-  "version": "0.0.0",
+  "version": "0.0.0-dev",
   "description": "A strapi plugin to use import/export commands from the admin panel",
   "keywords": [
     "strapi",
@@ -41,11 +41,15 @@
     "styled-components": "^5.3.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Taskworld",
+    "email": "developers@taskworld.com",
+    "url": "https://github.com/taskworld"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "Taskworld",
+      "email": "developers@taskworld.com",
+      "url": "https://github.com/taskworld"
     }
   ],
   "engines": {
@@ -56,5 +60,14 @@
     "dev": "tsc -p tsconfig.server.json -w",
     "build": "tsc -p tsconfig.server.json"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taskworld/strapi-plugin-import-export-web.git"
+  },
+  "homepage": "https://github.com/taskworld/strapi-plugin-import-export-web#readme"
 }

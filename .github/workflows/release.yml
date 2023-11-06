@@ -1,0 +1,36 @@
+name: 🚀 Release
+
+on:
+  push:
+    branches:
+      - main
+      - next
+      - beta
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+
+    name: release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: actions/setup-node@v4.0.0
+        with:
+          cache: npm
+          node-version: 18
+
+      - run: npm ci
+      - run: npm run build
+      - run: npx semantic-release@21.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
