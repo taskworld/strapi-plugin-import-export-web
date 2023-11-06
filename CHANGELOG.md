@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.0.0...v1.0.1) (2023-11-06)
+
+
+### fix
+
+* adjust version to match with strapi packages ([8253636](https://github.com/taskworld/strapi-plugin-import-export-web/commit/8253636d0e3f34bf32241f620b0a884d6113054c))
+
 # 1.0.0 (2023-11-06)
 
 
