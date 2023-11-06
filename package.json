@@ -33,14 +33,14 @@
     "react-router-dom": "^5.3.4",
     "semantic-release": "^22.0.7",
     "semantic-release-npm-github-publish": "^1.5.4",
-    "styled-components": "^5.3.6",
+    "styled-components": "^5.3.3",
     "typescript": "5.0.4"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.3"
   },
   "author": {
     "name": "Taskworld",
