@@ -1,7 +1,9 @@
 import { FormEvent, useState } from "react";
 
 import { Button, Checkbox, Flex, Typography } from "@strapi/design-system";
+
 import { useFetchClient } from "@strapi/helper-plugin";
+
 import { Download } from "@strapi/icons";
 
 import pluginId from "../../../pluginId";

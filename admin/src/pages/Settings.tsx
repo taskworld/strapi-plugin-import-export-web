@@ -2,7 +2,6 @@ import {
   ContentLayout,
   HeaderLayout,
   Flex,
-  Typography,
   Main,
 } from "@strapi/design-system";
 
