@@ -14,11 +14,11 @@ const hasServiceToken: Common.Policy = (ctx, cfg, { strapi }) => {
   );
 };
 
-const canImport: Common.Policy = (ctx, cfg, { strapi }) => {
+const canImport: Common.Policy = (ctx) => {
   return ctx.state.userAbility.can(getActionUid(IMPORT));
 };
 
-const canExport: Common.Policy = (ctx, cfg, { strapi }) => {
+const canExport: Common.Policy = (ctx) => {
   return ctx.state.userAbility.can(getActionUid(EXPORT));
 };
 
