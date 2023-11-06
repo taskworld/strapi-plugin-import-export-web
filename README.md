@@ -2,6 +2,8 @@
 
 This plugin provides a web ui for the `strapi import` and `strapi export` commands, so that you can backup/restore your strapi easily.
 
+<img width="1256" alt="Screenshot 2566-11-06 at 11 16 07" src="https://github.com/taskworld/strapi-plugin-import-export-web/assets/411625/ba671516-904e-41bf-a1fe-4a5d1bdc04af">
+
 ## Official documentation of the commands
 
 - [strapi import](https://docs.strapi.io/dev-docs/data-management/import)
@@ -34,6 +36,8 @@ In your `config/plugins.js` you can add:
 ## ACL
 
 You can go an enable/disable import and export actions in the roles section of the admin panel. This should enable/disable endpoints and stop displaying the section according to the permissions you provided.
+
+<img width="1222" alt="Screenshot 2566-11-06 at 11 17 00" src="https://github.com/taskworld/strapi-plugin-import-export-web/assets/411625/595d6a6a-7c49-4e89-bb51-a68971adaaef">
 
 ## Notes
 
