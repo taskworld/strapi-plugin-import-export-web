@@ -1,4 +1,5 @@
-import pluginId from "../../pluginId";
+import pluginId from "../../pluginId.json";
+import actions from "../../actions.json";
 
 type Action = {
   section: string;
@@ -7,22 +8,25 @@ type Action = {
   pluginName: string;
 };
 
-export const IMPORT: Action = {
-  section: "plugins",
-  displayName: "Import",
-  uid: "import",
-  pluginName: pluginId,
-};
+type ActionUid = keyof typeof actions
 
-export const EXPORT: Action = {
-  section: "plugins",
-  displayName: "Export",
-  uid: "export",
-  pluginName: pluginId,
-};
-
-export function getActionUid(action: Action) {
-  return `plugin::${action.pluginName}.${action.uid}`;
+export function getActionUid(uid: ActionUid) {
+  return `plugin::${pluginId}.${uid}`;
 }
 
-export default [IMPORT, EXPORT] as Action[];
+export function getAction(uid: ActionUid): Action {
+  return {
+    uid,
+    section: "plugins",
+    displayName: actions[uid],
+    pluginName: pluginId,
+  }
+}
+
+export function getActions(): Action[] {
+  return Object.keys(actions)
+    .filter((key: string): key is ActionUid => true)
+    .map(getAction)
+}
+
+export default getActions()

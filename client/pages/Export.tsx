@@ -6,7 +6,7 @@ import { useFetchClient } from "@strapi/helper-plugin";
 
 import { Download } from "@strapi/icons";
 
-import pluginId from "../../../pluginId";
+import pluginId from "../../pluginId.json";
 
 function getAttachmentName(contentDispositionHeader: string = "") {
   const val = new URLSearchParams(

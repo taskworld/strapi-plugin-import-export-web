@@ -1,8 +1,8 @@
 import type { Common } from "@strapi/strapi";
 
-import pluginId from "../../pluginId";
+import pluginId from "../../pluginId.json";
 
-import { IMPORT, EXPORT, getActionUid } from "../actions";
+import { getActionUid } from "../actions";
 
 const hasServiceToken: Common.Policy = (ctx, cfg, { strapi }) => {
   const serviceToken = strapi
@@ -15,11 +15,11 @@ const hasServiceToken: Common.Policy = (ctx, cfg, { strapi }) => {
 };
 
 const canImport: Common.Policy = (ctx) => {
-  return ctx.state.userAbility.can(getActionUid(IMPORT));
+  return ctx.state.userAbility.can(getActionUid('import'));
 };
 
 const canExport: Common.Policy = (ctx) => {
-  return ctx.state.userAbility.can(getActionUid(EXPORT));
+  return ctx.state.userAbility.can(getActionUid('export'));
 };
 
 export default {

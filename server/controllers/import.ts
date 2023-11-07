@@ -2,7 +2,7 @@ import type { ControllerFactory } from "./types";
 
 import { dirname, join } from "path";
 
-import pluginId from "../../pluginId";
+import pluginId from "../../pluginId.json";
 
 import { execa } from "../utils";
 

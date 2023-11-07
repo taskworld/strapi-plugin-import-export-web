@@ -2,8 +2,9 @@ import { randomUUID } from "crypto";
 import { createReadStream } from "fs";
 import { join } from "path";
 
+import pluginId from "../../pluginId.json";
+
 import { getProjectName, withExt } from "../utils";
-import pluginId from "../../pluginId";
 
 import type { ControllerFactory } from "./types";
 

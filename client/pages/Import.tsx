@@ -12,7 +12,7 @@ import { useFetchClient } from "@strapi/helper-plugin";
 
 import { Upload } from "@strapi/icons";
 
-import pluginId from "../../../pluginId";
+import pluginId from "../../pluginId.json";
 
 export default function Import() {
   const [configOpt, setConfigOpt] = useState(false);

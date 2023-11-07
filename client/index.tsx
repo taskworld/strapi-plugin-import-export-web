@@ -1,6 +1,6 @@
-import pluginId from "../../pluginId";
+import pluginId from "../pluginId.json";
 
-import { IMPORT, EXPORT, getActionUid } from "../../server/actions";
+import { getActionUid } from "./utils/actions";
 
 export default {
   bootstrap(app: any) {
@@ -17,11 +17,11 @@ export default {
         ),
       permissions: [
         {
-          action: getActionUid(IMPORT),
+          action: getActionUid('import'),
           subject: null,
         },
         {
-          action: getActionUid(EXPORT),
+          action: getActionUid('export'),
           subject: null,
         },
       ],

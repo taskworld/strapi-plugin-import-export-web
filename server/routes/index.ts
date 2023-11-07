@@ -1,4 +1,4 @@
-import pluginId from "../../pluginId";
+import pluginId from "../../pluginId.json";
 
 export default [
   {

@@ -1,6 +1,6 @@
 import { Common } from "@strapi/strapi";
 
-import pluginId from "../../pluginId";
+import pluginId from "../../pluginId.json";
 
 export const auth: Common.MiddlewareFactory<{
   actionId: string;
