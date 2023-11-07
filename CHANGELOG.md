@@ -1,3 +1,22 @@
+# [1.1.0](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.0.1...v1.1.0) (2023-11-07)
+
+
+### docs
+
+* [skip ci] add screenshots to readme ([0325a13](https://github.com/taskworld/strapi-plugin-import-export-web/commit/0325a136a0cd4b44166ab94ca440bd8723c2f089))
+
+
+### feat
+
+* refactor to allow client in ts ([29c5c7f](https://github.com/taskworld/strapi-plugin-import-export-web/commit/29c5c7fbd3f81cdc149f819e0655b7f5aa572a5b))
+
+
+### fix
+
+* build command typo ([2a1444f](https://github.com/taskworld/strapi-plugin-import-export-web/commit/2a1444fcb94e8e2ce063c2e0c3f3a9779f594749))
+* remove unused code ([a934d1a](https://github.com/taskworld/strapi-plugin-import-export-web/commit/a934d1a605056b93d74bc76d68cc86d8bedb383c))
+* while testing live, it looks like this is mandatory ([bc00c78](https://github.com/taskworld/strapi-plugin-import-export-web/commit/bc00c78d4ea7597fcddd5b049637dcd0f96464f0))
+
 ## [1.0.1](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.0.0...v1.0.1) (2023-11-06)
 
 
