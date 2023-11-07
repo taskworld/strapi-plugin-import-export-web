@@ -61,7 +61,7 @@
   "scripts": {
     "build:client": "tsc -p tsconfig.client.json",
     "build:server": "tsc -p tsconfig.server.json",
-    "build": "npm run build:client && build:server"
+    "build": "npm run build:client && npm run build:server"
   },
   "license": "MIT",
   "publishConfig": {
