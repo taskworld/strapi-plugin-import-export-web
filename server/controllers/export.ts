@@ -56,6 +56,7 @@ export const exportController: ControllerFactory = ({ strapi }) => ({
       ctx.body = createReadStream(withExt(filePath, !!encryptionKey));
     } catch (err: unknown) {
       ctx.status = 500;
+      ctx.body = `${err}`
       throw err;
     }
   },

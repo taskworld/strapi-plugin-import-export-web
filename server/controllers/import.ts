@@ -44,6 +44,7 @@ export const importController: ControllerFactory = ({ strapi }) => ({
       ctx.status = success ? 200 : 400;
     } catch (err: unknown) {
       ctx.status = 500;
+      ctx.body = `${err}`
       throw err;
     }
   },
