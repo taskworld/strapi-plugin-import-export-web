@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.1.0...v1.2.0) (2023-11-08)
+
+
+### feat
+
+* add error details ([051bd44](https://github.com/taskworld/strapi-plugin-import-export-web/commit/051bd44c62f1587e950877bfd8f5e6f8bf6da8c9))
+
+
+### fix
+
+* [skip ci] minimal functioning tsconfig ([9c46a52](https://github.com/taskworld/strapi-plugin-import-export-web/commit/9c46a52766d28b3d2b388d1bd8e958636d31db9e))
+
 # [1.1.0](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.0.1...v1.1.0) (2023-11-07)
 
 

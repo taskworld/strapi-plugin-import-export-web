@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-import-export-web",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A strapi plugin to use import/export commands from the admin panel",
   "keywords": [
     "strapi",
