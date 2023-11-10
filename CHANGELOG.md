@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.2.1...v1.2.2) (2023-11-10)
+
+
+### fix
+
+* create tmp dir if not here ([b653f5a](https://github.com/taskworld/strapi-plugin-import-export-web/commit/b653f5afdacd178ea5aabcc7ba82e91c2c962472))
+
 ## [1.2.1](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.2.0...v1.2.1) (2023-11-10)
 
 
