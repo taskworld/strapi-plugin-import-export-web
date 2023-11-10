@@ -3,7 +3,13 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import { promisify } from "util";
 
-export const execa = promisify(exec);
+const _execa = promisify(exec);
+
+export async function execa(command: string) {
+  const stds = await _execa(command)
+  console.info({ command, ...stds })
+  return stds
+}
 
 let pckgJsn: string | undefined;
 
