@@ -1,14 +1,24 @@
 import { exec } from "child_process";
-import { readFileSync } from "fs";
+import { mkdir, readFileSync } from "fs";
 import { join } from "path";
 import { promisify } from "util";
 
 const _execa = promisify(exec);
+const _mkdir = promisify(mkdir);
 
 export async function execa(command: string) {
   const stds = await _execa(command)
   console.info({ command, ...stds })
   return stds
+}
+
+export async function mkdirp(path: string) {
+  let success = false
+
+  return _mkdir(path, { recursive: true })
+    .then(() => success = true)
+    .catch(() => success = false)
+    .finally(() => success)
 }
 
 let pckgJsn: string | undefined;

@@ -4,7 +4,7 @@ import { join } from "path";
 
 import pluginId from "../../pluginId.json";
 
-import { getProjectName, withExt } from "../utils";
+import { getProjectName, mkdirp, withExt } from "../utils";
 
 import type { ControllerFactory } from "./types";
 
@@ -22,6 +22,7 @@ export const exportController: ControllerFactory = ({ strapi }) => ({
         throw new Error("nothing enabled to export");
       }
 
+      await mkdirp(ARCHIVE_DIR);
       const filePath = join(ARCHIVE_DIR, randomUUID());
 
       const archiveName = strapi
