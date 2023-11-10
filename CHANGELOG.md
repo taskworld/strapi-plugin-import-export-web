@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.2.0...v1.2.1) (2023-11-10)
+
+
+### fix
+
+* add log to terminal commands ([da0f93b](https://github.com/taskworld/strapi-plugin-import-export-web/commit/da0f93b57ced130a87ec41d6da512cff2e4d76b9))
+
 # [1.2.0](https://github.com/taskworld/strapi-plugin-import-export-web/compare/v1.1.0...v1.2.0) (2023-11-08)
 
 
